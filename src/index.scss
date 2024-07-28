@@ -1,0 +1,10 @@
+@import "./styles/weather.scss";
+@import "./styles/theme.scss";
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Noto Sans", "geomanist", Arial;
+  color: var(--primary-font-color);
+  box-sizing: border-box;
+}

@@ -1,0 +1,13 @@
+$mobile-max: 768px;
+
+@mixin responsiveScreenMobile() {
+  @media screen and (max-width: $mobile-max) {
+    @content;
+  }
+}
+
+@mixin hoverScaleUp() {
+  transform: scale(1.03);
+  transition-duration: 300ms;
+  box-shadow: 0 0 16px rgba(180, 180, 180, 0.65);
+}

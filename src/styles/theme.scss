@@ -1,0 +1,68 @@
+html {
+  --background-image: url("../assets/img/bg-light.png");
+  --primary-font-color: #000000;
+  --primary-background-color: #bba5e8;
+  --secondary-background-color: #d2bfed;
+  --item-background-color: #e5daf5;
+  --secondary-font-color: #000000;
+  --search-background-color: #6d40b5;
+}
+
+html[data-theme="dark"] {
+  --background-image: url("../assets/img/bg-dark.png");
+  --primary-font-color: #ffffff;
+  --primary-background-color: #4a348f;
+  --secondary-background-color: #412e6f;
+  --item-background-color: #2b2344;
+  --secondary-font-color: #9490a0;
+  --search-background-color: #29124c;
+
+  .page-container {
+    .page-content {
+      .weather-wrap {
+        .weather {
+          .temperature-wrap {
+            .temperature-no {
+              color: var(--primary-font-color);
+            }
+          }
+        }
+      }
+    }
+
+    .weather-wrap {
+      border: none;
+
+      .weather {
+        .temperature-wrap {
+          .current-city {
+            color: var(--primary-font-color);
+          }
+        }
+
+        .weather-state-wrap {
+          .weather-detail {
+            color: var(--primary-font-color);
+          }
+        }
+      }
+    }
+
+    .search-history {
+      .search-item {
+        .search-item-detail {
+          .search-time {
+            color: var(--secondary-font-color);
+          }
+        }
+
+        .search-action {
+          .action-icon {
+            background: none;
+            border: 2px solid var(--secondary-font-color);
+          }
+        }
+      }
+    }
+  }
+}
