@@ -17,8 +17,9 @@ const SearchBox = (props) => {
   };
 
   const onSearch = () => {
-    if (!searchDebounce.current) {
+    if (!searchDebounce.current && city) {
       onCheckWeather(city);
+      setCity("");
       searchDebounce.current = setTimeout(() => {
         searchDebounce.current = undefined;
       }, 1000);
